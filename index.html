@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Professor Guthierre</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        header {
+            background-color: #003366;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header h1 {
+            font-size: 22px;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            background-image: url('imagens/banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .banner-text {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #003366;
+            padding: 15px 30px;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .banner-aulas {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-image: url('imagens/banner-aulas-online.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-top: 80px;
+        }
+        .banner-aulas-texto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 51, 102, 0.7);
+            padding: 15px 30px;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .paragrafos-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 20px;
+        }
+        .paragrafo {
+            width: 30%;
+            text-align: center;
+        }
+        .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            color: black;
+        }
+        .texto {
+            font-size: 14px;
+            color: gray; /* Aqui o texto foi corrigido para CINZA */
+        }
+        .paragrafos-container-mini {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .paragrafo-mini {
+            width: 23%;
+            text-align: center;
+        }
+        .paragrafo-mini .numero {
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+        }
+        .paragrafo-mini .subtitulo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+        }
+        .paragrafo-mini .descricao {
+            font-size: 14px;
+            color: gray;
+        }
+        /* NOVA PARTE */
+        .seo-container {
+            display: flex;
+            justify-content: center;
+            margin: 60px 0;
+            gap: 60px;
+        }
+        .seo-item {
+            text-align: center;
+            width: 300px;
+        }
+        .seo-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .seo-item .titulo {
+            font-size: 22px;
+            color: black;
+            margin-bottom: 15px;
+        }
+        .seo-item .texto {
+            font-size: 14px;
+            color: #555;
+        }
+        /* Rodapé */
+        .rodape {
+            width: 100%;
+            background-color: #003366;
+        }
+        .rodape-conteudo {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .botao-whatsapp {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .botao-whatsapp:hover {
+            cursor: pointer;
+        }
+        .rodape-cinza {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="imagens/icon.png" alt="Ícone Usuário">
+    <h1>Professor Guthierre</h1>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">SERVIÇOS</a>
+        <a href="#">CONTATO</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <div class="banner-text">AULAS E SERVIÇOS</div>
+</section>
+
+<div class="paragrafos-container">
+    <div class="paragrafo">
+        <div class="titulo">Redes Sociais</div>
+        <div class="texto">
+            As redes sociais são plataformas digitais que permitem a interação e a troca de informações entre os usuários. Elas têm se tornado uma parte fundamental da comunicação, marketing e entretenimento na internet. Por meio delas, empresas e indivíduos podem criar comunidades, divulgar produtos e ideias, além de promover o engajamento direto com seu público-alvo.
+        </div>
+    </div>
+
+    <div class="paragrafo">
+        <div class="titulo">Desenvolvimento de Sistemas Web</div>
+        <div class="texto">
+            O desenvolvimento de sistemas web envolve a criação de aplicações que rodam através de navegadores de internet. Ele abrange tanto o front-end, que é a interface com o usuário, quanto o back-end, que lida com o processamento e armazenamento de dados. A utilização de tecnologias como HTML, CSS, JavaScript e bancos de dados é essencial para criar sistemas interativos, eficientes e funcionais.
+        </div>
+    </div>
+
+    <div class="paragrafo">
+        <div class="titulo">SEO</div>
+        <div class="texto">
+            SEO, ou otimização para motores de busca, é o processo de melhorar a visibilidade de um site nos resultados dos motores de busca como o Google. Através de técnicas como o uso de palavras-chave, criação de conteúdo relevante e otimização de estrutura, o SEO visa aumentar o tráfego orgânico de visitantes, tornando o site mais acessível e relevante para o público-alvo.
+        </div>
+    </div>
+</div>
+
+<div class="paragrafos-container-mini">
+    <div class="paragrafo-mini">
+        <div class="numero">15.000</div>
+        <div class="subtitulo">Alunos atendidos</div>
+        <div class="descricao">Aulas remotas</div>
+    </div>
+
+    <div class="paragrafo-mini">
+        <div class="numero">+100</div>
+        <div class="subtitulo">Clientes</div>
+        <div class="descricao">Redes Sociais</div>
+    </div>
+
+    <div class="paragrafo-mini">
+        <div class="numero">15</div>
+        <div class="subtitulo">Anos</div>
+        <div class="descricao">Experiência</div>
+    </div>
+
+    <div class="paragrafo-mini">
+        <div class="numero">100</div>
+        <div class="subtitulo">Horas</div>
+        <div class="descricao">Vídeos no canal do YouTube</div>
+    </div>
+</div>
+
+<section class="banner-aulas">
+    <div class="banner-aulas-texto">AULAS ONLINE</div>
+</section>
+
+<section class="seo-container">
+    <div class="seo-item">
+        <div class="titulo">Otimização de Sites (SEO)</div>
+        <img src="imagens/seo-otimizacao.jpg" alt="Otimização de Sites">
+        <div class="texto">
+            A otimização de sites é essencial para garantir que seu conteúdo alcance o público certo nos motores de busca, aumentando sua visibilidade e impacto.
+        </div>
+    </div>
+
+    <div class="seo-item">
+        <div class="titulo">Localização</div>
+        <img src="imagens/marketing-conteudo.jpg" alt="Marketing de Conteúdo">
+        <div class="texto">
+            Atualmente, a geolocalização é popularmente utilizada para encontrar endereços, mas também pode ser usada para determinar onde uma pessoa se encontra.
+        </div>
+    </div>
+</section>
+
+<footer class="rodape">
+    <div class="rodape-conteudo">
+        <div>Contato por Whatsapp</div>
+        <a href="#" class="botao-whatsapp">Entre em contato</a>
+    </div>
+    <div class="rodape-cinza">
+        ©2025 • Professor Guthierre
+    </div>
+</footer>
+
+</body>
+</html>
